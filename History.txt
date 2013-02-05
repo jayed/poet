@@ -1,5 +1,7 @@
 master
 
+- `poet edit` re-generates files only when they are actually changed
+
 0.5
 
 - drop support for Ruby 1.8
