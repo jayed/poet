@@ -1,5 +1,29 @@
 master
 
+- drop support for Ruby 1.9, officially support Ruby 2.2
+
+0.8.1
+
+- fixed bug "uninitialized constant PoetCLI::Digest" on 2.0 (thanks @yagooar)
+
+0.8
+
+- opt-in bash completion (beware: a little sluggish on 1.9.3)
+
+0.7
+
+- list config files with `poet ls` or `poet ls --tree`
+
+- drop suport for Ruby 1.9.2, officially support 2.0
+
+- `poet edit` re-generates files only when they are actually changed
+
+0.6
+
+- show original file where stanzas came from (thanks @sethiele)
+
+- check for existence of ssh config file when bootstrapping (thanks @jayed)
+
 0.5
 
 - drop support for Ruby 1.8

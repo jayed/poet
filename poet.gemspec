@@ -10,11 +10,12 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/awendt/poet"
   s.summary     = %q{Poet concatenates stanzas}
   s.description = %q{Split your longish ~/.ssh/config into files in ~/.ssh/config.d/ and let poet join them for you.}
+  s.license     = "MIT"
 
   s.rubyforge_project = "poet"
 
   s.files         = `git ls-files`.split("\n")
-  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
+  s.test_files    = `git ls-files -- {test,spec,features,editors}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
@@ -22,5 +23,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency "cucumber"
   s.add_development_dependency "aruba"
   s.add_development_dependency "rake"
+  s.required_ruby_version = '>= 2.0.0'
   s.add_runtime_dependency "thor"
 end
